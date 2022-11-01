@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import data from "./data/projectsData";
+import Dashboard from "./components/Dashboard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart";
+import Allprojectbudgetplot from "./components/Allprojectbudgetplot";
+import Menu from "./components/Menu";
+import DownlaodPDF from "./components/DownloadPDF";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Dashboard data={data} />} />
+          <Route path="cart/:id" element={<Cart />} />
+          <Route path="report/pdfreport" element={<DownlaodPDF />} />
+          <Route
+            path="report/allprojectbudgetplot"
+            element={<Allprojectbudgetplot />}
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

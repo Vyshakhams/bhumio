@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+.rect {
+  border-radius: 25px;
+  border: 2px solid blue;
+  padding: 20px;
+  width: 334px;
+  height: 150px;
+}
+
+.pdfrect {
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+  padding: 20px;
+  width: 90%;
+  height: 500px;
+}
+
+.teee {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 84%;
+  margin-top: 15%;
+  gap: 20px;
+}
+
+.chart {
+  padding-left: 7%;
+  padding-top: 7%;
+  padding-right: 10%;
+}
+
+table {
+  position: relative;
+  top: 51%;
+  left: 30%;
+}
+
+th {
+  padding: 10px;
+}
+
+hr.new4 {
+  border: 3px solid blue;
+  display: table-row;
+}
+
+tr th {
+  width: 250px;
+}
+
+.downlo {
+  bottom: 301px;
+  position: absolute;
+  right: 148px;
+}
+
+td {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.projectText {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.extra {
+  display: flex;
+  justify-content: center;
+  gap: 83px;
+  flex-wrap: wrap;
+  width: 41%;
+  margin-left: 29%;
+  padding-top: 5%;
+}
